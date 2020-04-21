@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Projeto/css/style.css">
+    <link rel="stylesheet" href="../Projeto/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <title>Agência M3.</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="topo">
+                <div>
+                    <img src="../imagens/logo-m3.png" alt="">
+                </div>
+                <div id="cart">
+                        <img src="../imagens/icons8-sacola-de-compras-100.png" alt="" width="30px" >
+                    <div class="value_cart">
+                        <span class='count'>0</span>
+                     </div>
+                </div>
+            </div>
+        </div>    
+                       
+                
+    </header>
+    <div class="conteudo">
+        <div class="container">
+            
+            <div class="espaco">
+                <h2>Blusas</h2>
+                <div class="custom-select">
+                    <select>
+                      <option value="0" disabled selected>Ordernar por:</option>
+                      <option value="date">Mais Recente</option>
+                      <option value="price-asc">Menor Preço</option>
+                      <option value="price-desc">Maior Preço</option>
+                    </select>
+                </div>    
+            </div>    
+            
+            <div class="grid_content_category">
+                <div class="order_sidebar">
+                    <div class="mobile-select">
+                        <div class="mobile-order-header">
+                            <div class="content_side_order">
+                                <div class='title_select_header'>
+                                    <h4>Ordenar</h4>
+                                </div>
+                                <div class='close_order_btn'>
+                                   <span> X </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class='content_select'>
+                            <div data-order='date' class="date-mbl"><span>Mais Recente</span></div>
+                            <div data-order='price-asc' class="price-asc-mbl"><span>Menor Preço</span></div>
+                            <div data-order='price-desc' class="price-desc-mbl"><span>Maior Preço</span></div>
+                        </div>    
+                    </div>    
+                </div>
+                   
+                    
+                    
+                <div class="filter_sidebar">
+                    <div class='mobile-filter-header'>
+                        <div class='content_side'>
+                            <div class='title_filter_header'>
+                                <h4> Filtro </h4>
+                            </div>
+                            <div class='close_filter_btn'>
+                               <span> X </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-filter">
+                         
+                        <form action="" class="filter" id="filter_form">
+                
+                            <h3>Cores</h3>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="amarelo" name="cor">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title"><span>Amarelo</span></div>
+                                </div>
+                            </div>   
+                              
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="azul" name="cor">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">Azul</div>
+                                </div>
+                            </div>
+                            
+                             <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="branco" name="cor">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">Branco</div>
+                                </div>
+                            </div>   
+                           
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="cinza" name="cor">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">Cinza</div>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="laranja" name="cor">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">Laranja</div>
+                                </div>
+                            </div>
+                            
+                           <li class="sidebar-dropdown">
+                                <a href="#">
+                                  <i class="far fa-gem"></i>
+                                  <span>Ver todas as Cores</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                  <ul>
+                                    <li>
+                                        <div class="card">
+                                            <div class="checkbox-container">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" value="verde" name="cor">
+                                                <span class="checkbox-custom rectangular"></span>
+                                            </label>
+                                            <div class="input-title">Verde</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="checkbox-container">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" value="vermelho" name="cor">
+                                                <span class="checkbox-custom rectangular"></span>
+                                            </label>
+                                            <div class="input-title">Vermelho</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="checkbox-container">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" value="preto" name="cor">
+                                                <span class="checkbox-custom rectangular"></span>
+                                            </label>
+                                            <div class="input-title">Preto</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="checkbox-container">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" value="rosa" name="cor">
+                                                <span class="checkbox-custom rectangular"></span>
+                                            </label>
+                                            <div class="input-title">Rosa</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card">
+                                            <div class="checkbox-container">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" value="vinho" name="cor">
+                                                <span class="checkbox-custom rectangular"></span>
+                                            </label>
+                                            <div class="input-title">Vinho</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                    
+                            <h3>Tamanhos</h3>
+                            <div class="select-size">
+                                <input type="radio" name="tamanho" id="small" checked value="P"/>
+                                <input type="radio" name="tamanho" id="medium"  value="M"/>
+                                <input type="radio" name="tamanho" id="large"  value="G"/>
+                                <input type="radio" name="tamanho" id="x-large"  value="GG"/>
+                                <input type="radio" name="tamanho" id="number-1" value="36" />
+                                <input type="radio" name="tamanho" id="number-2" value="38"/>
+                                <input type="radio" name="tamanho" id="number-3" value="40"/>
+                                <input type="radio" name="tamanho" id="number-4" value="44"/>
+                                <input type="radio" name="tamanho" id="number-5" value="46"/>
+    
+                              
+                                <label for="small">P</label>
+                                <label for="medium">M</label>
+                                <label for="large">G</label>
+                                <label for="x-large">GG</label>
+                                <label for="number-1">36</label>
+                                <label for="number-2">38</label>
+                                <label for="number-3">40</label>
+                                <label for="number-4">44</label>
+                                <label for="number-5">46</label>
+                              
+                            </div>
+                            
+                    
+                    
+                            <h3>Faixa de preço</h3>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="preco" value="0-50">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">De R$0 até R$50</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="preco" value="51-150">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">De R$51 até R$150</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="preco" value="151-300">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">De R$151 até R$300</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="preco" value="301-500">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">De R$301 até R$500</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="checkbox-container">
+                                <label class="checkbox-label">
+                                    <input type="radio" name="preco" value="501">
+                                    <span class="checkbox-custom rectangular"></span>
+                                </label>
+                                <div class="input-title">A partir de R$500</div>
+                                </div>
+                            </div>
+                            <div class="mobile-btn-bottom">
+                                <div>
+                                    <input type="submit" value="APLICAR" class="filter-mobile-btn">
+                                </div>    
+                                
+                                <div class="clear-mobile-btn">
+                                    <span>LIMPAR</span>
+                                </div>    
+                                
+                            </div>
+                        </form>    
+                    </div>    
+                    
+                </div>
+                
+                
+                <div class="shop_box">
+                    <div class="filtros-mobile">
+                        <div class="botao-mobile">
+                            <div class="botao-filtrar">
+                                <span>Filtrar</span>
+                            </div>
+                            <div class="botao-ordenar">
+                                <span>Ordernar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_products"></div>
+                    <div class="footer_btn"></div>   
+                </div>         
+                       
+            </div>    
+        </div>        
+                   
+    </div>          
+    <div class="footer">
+        <footer>
+            <p>Agência M3-Agência de Performance Digital</p>
+        </footer>
+    </div>            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../Projeto/script/produtos.js"></script> 
+    <script src="../Projeto/script/script.js"></script> 
+
+</body>  
+    
+</html>             
+                       
+                        
+                       
+                        
+                       
+                        
+               
+            
+    
