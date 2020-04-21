@@ -58,6 +58,15 @@ corpo
     display: flex;
     padding-top: 30px;
 }
+.NoContentMsg{
+    width: 100%;
+    grid-column: 1/-1;
+    justify-content: center;
+    display: flex;
+}
+.NoContentMsg>h3{
+    letter-spacing: 1px;
+}
 /* custom select */
 .custom-select{
     margin-left: auto;
@@ -138,8 +147,6 @@ select {
 }
 .card {
     display:flex;
-    background-color: #fff;
-    
 }
 .card::after {
     display: flex;
@@ -285,11 +292,15 @@ div>.Filter1{
     margin-top: 50px;
     padding: 12px 0px 12px 0px;
 }
-
+.single_product{
+    display: none;
+}
 .single_product>img {
     width: 100%;
 }
-
+.content_select>div{
+    cursor: pointer;
+}
 @media only screen and (max-width: 500px){
     .container{
         width: 90%;
@@ -386,6 +397,7 @@ div>.Filter1{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px;
+        cursor: pointer;
         
     }
     .botao-mobile>div{
@@ -395,14 +407,16 @@ div>.Filter1{
     .botao-mobile>div>span{
         margin: auto;
     }
-    .close_filter_btn{
+    .close_filter_btn, .close_order_btn{
         position: absolute;
         right: 0;
         height: 100%;
         display: flex;
+        cursor: pointer;
     }
     .close_filter_btn>span{
         margin: auto;
+
     }
     .mobile-filter-header{
         display: inline-flex;
@@ -441,6 +455,7 @@ div>.Filter1{
     }
     .mobile-btn-bottom>div{
         display: flex;
+        
     }
     .mobile-btn-bottom>div>input{
         display: flex;
@@ -451,6 +466,7 @@ div>.Filter1{
         background:rgb(0, 210, 255);
         color: #fff;
         border: none;
+        justify-content: center;
     } 
     .mobile-btn-bottom>.clear-mobile-btn{
         display: flex;

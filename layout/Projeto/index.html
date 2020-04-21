@@ -19,7 +19,6 @@
                 <div id="cart">
                         <img src="../imagens/icons8-sacola-de-compras-100.png" alt="" width="30px" >
                     <div class="value_cart">
-                        
                         <span class='count'>0</span>
                      </div>
                 </div>
@@ -58,9 +57,9 @@
                         </div>
                         
                         <div class='content_select'>
-                            <div class="date-mbl"><span>Mais Recente</span></div>
-                            <div class="price-asc-mbl"><span>Menor Preço</span></div>
-                            <div class="price-desc-mbl"><span>Maior Preço</span></div>
+                            <div data-order='date' class="date-mbl"><span>Mais Recente</span></div>
+                            <div data-order='price-asc' class="price-asc-mbl"><span>Menor Preço</span></div>
+                            <div data-order='price-desc' class="price-desc-mbl"><span>Maior Preço</span></div>
                         </div>    
                     </div>    
                 </div>
@@ -232,7 +231,7 @@
                             <div class="card">
                                 <div class="checkbox-container">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="preco" value="0">
+                                    <input type="radio" name="preco" value="0-50">
                                     <span class="checkbox-custom rectangular"></span>
                                 </label>
                                 <div class="input-title">De R$0 até R$50</div>
@@ -241,7 +240,7 @@
                             <div class="card">
                                 <div class="checkbox-container">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="preco" value="51">
+                                    <input type="radio" name="preco" value="51-150">
                                     <span class="checkbox-custom rectangular"></span>
                                 </label>
                                 <div class="input-title">De R$51 até R$150</div>
@@ -250,7 +249,7 @@
                             <div class="card">
                                 <div class="checkbox-container">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="preco" value="151">
+                                    <input type="radio" name="preco" value="151-300">
                                     <span class="checkbox-custom rectangular"></span>
                                 </label>
                                 <div class="input-title">De R$151 até R$300</div>
@@ -259,7 +258,7 @@
                             <div class="card">
                                 <div class="checkbox-container">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="preco" value="301">
+                                    <input type="radio" name="preco" value="301-500">
                                     <span class="checkbox-custom rectangular"></span>
                                 </label>
                                 <div class="input-title">De R$301 até R$500</div>
@@ -268,7 +267,7 @@
                             <div class="card">
                                 <div class="checkbox-container">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="preco" value="501">
+                                    <input type="radio" name="preco" value="501">
                                     <span class="checkbox-custom rectangular"></span>
                                 </label>
                                 <div class="input-title">A partir de R$500</div>
@@ -302,11 +301,7 @@
                         </div>
                     </div>
                     <div class="box_products"></div>
-                    <div class="footer_btn">
-                        <div id="loadMore">
-                            <a><span class="replace">CARREGAR MAIS</span></a>
-                        </div>
-                    </div>   
+                    <div class="footer_btn"></div>   
                 </div>         
                        
             </div>    
